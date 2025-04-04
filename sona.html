@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkqqczfDvjI1JQEPHqwfFBlQ5y98TaX0vRDQ&s" rel="icon">
+    <style>
+        body {
+            background: linear-gradient(135deg, #4c005f, #000000, #4c005f);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.6);
+            animation: slideDown 1s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3em;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 10px auto;
+            line-height: 1.6;
+        }
+
+        section {
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 20px auto;
+            border-radius: 10px;
+            width: 80%;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        h2 {
+            font-size: 2em;
+            border-bottom: 2px solid white;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            font-size: 1.2em;
+            padding: 5px;
+        }
+
+        /* Responsive Grid for Events */
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .project {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            border-radius: 10px;
+            margin-top: 10px;
+            transition: transform 0.3s;
+            width: 100%;
+            max-width: 250px;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <ul>
+            <li>Name: Sona</li>
+            <li>Course: BSc IT - 2nd Year</li>
+            <li>Location: Coimbatore</li>
+            <li>Email:2326jb@kgcas.com</li>
+        </ul>
+    </section>
+    
+    <section id="soft skills">
+        <h2>Soft Skills</h2>
+        <ul>
+            <li>Communication</li>
+            <li>Problem Solving</li>
+            <li>Leadership</li>
+            <li>Team management</li>
+        </ul>
+    </section>
+    <section id="Technical skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Html</li>
+            <li>Css</li>
+            <li>C++</li>
+            <li>Java</li>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>Participated Events</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>SIH Hackathon</h3>
+                <img src="https://i.ytimg.com/vi/znMbKz6ZPno/maxresdefault.jpg" alt="SIH Hackathon">
+                <p>Participated in the Smart India Hackathon, solving real-world problems using innovative technology solutions.</p>
+            </div>
+           
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email:2326jb46@kgcas.com</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Sona's Portfolio</p>
+    </footer>
+</body>
+</html>
